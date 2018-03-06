@@ -1,2 +1,2 @@
 # Firefly
-A MapleStory trainer framework
+A MapleStory trainer framework featuring a GUI, networking and file-mapping library.
