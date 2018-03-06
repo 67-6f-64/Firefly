@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Production|Win32">
+      <Configuration>Production</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aes_constants.hpp" />
+    <ClInclude Include="basic_types.hpp" />
+    <ClInclude Include="botting_types.hpp" />
+    <ClInclude Include="detours.hpp" />
+    <ClInclude Include="exclusive_types.hpp" />
+    <ClInclude Include="file_mapper.hpp" />
+    <ClInclude Include="file_reader.hpp" />
+    <ClInclude Include="file_writer.hpp" />
+    <ClInclude Include="hack_types.hpp" />
+    <ClInclude Include="manual_mapper.hpp" />
+    <ClInclude Include="native.hpp" />
+    <ClInclude Include="nmco_api\NMCOClientObject.h" />
+    <ClInclude Include="nmco_api\NMCOHelpers.h" />
+    <ClInclude Include="nmco_api\NMCONew.h" />
+    <ClInclude Include="nmco_api\NMCRChatRoom.h" />
+    <ClInclude Include="nmco_api\NMCSChatSession.h" />
+    <ClInclude Include="nmco_api\NMDataObject.h" />
+    <ClInclude Include="nmco_api\NMEventHandler.h" />
+    <ClInclude Include="nmco_api\NMEventObject.h" />
+    <ClInclude Include="nmco_api\NMFDSFileDownloadSession.h" />
+    <ClInclude Include="nmco_api\NMFunctionObject.h" />
+    <ClInclude Include="nmco_api\NMFUSFileUploadSession.h" />
+    <ClInclude Include="nmco_api\NMGeneral.h" />
+    <ClInclude Include="nmco_api\NMGSGeneralSession.h" />
+    <ClInclude Include="nmco_api\NMManager.h" />
+    <ClInclude Include="nmco_api\NMPCH.h" />
+    <ClInclude Include="nmco_api\NMPCH2.h" />
+    <ClInclude Include="nmco_api\NMSerializable.h" />
+    <ClInclude Include="nmco_api\NMWSWBSession.h" />
+    <ClInclude Include="nmco_api\PCH.h" />
+    <ClInclude Include="output.hpp" />
+    <ClInclude Include="pe_structs.hpp" />
+    <ClInclude Include="thread_manager.hpp" />
+    <ClInclude Include="utility.hpp" />
+    <ClInclude Include="windows_injector.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="basic_types.cpp" />
+    <ClCompile Include="detours.cpp" />
+    <ClCompile Include="file_mapper.cpp" />
+    <ClCompile Include="file_reader.cpp" />
+    <ClCompile Include="file_writer.cpp" />
+    <ClCompile Include="manual_mapper.cpp" />
+    <ClCompile Include="nmco_api\NMCOClientObject.cpp" />
+    <ClCompile Include="nmco_api\NMCOHelpers.cpp" />
+    <ClCompile Include="nmco_api\NMCRChatRoom.cpp" />
+    <ClCompile Include="nmco_api\NMCSChatSession.cpp" />
+    <ClCompile Include="nmco_api\NMDataObject.cpp" />
+    <ClCompile Include="nmco_api\NMEventHandler.cpp" />
+    <ClCompile Include="nmco_api\NMEventObject.cpp" />
+    <ClCompile Include="nmco_api\NMFDSFileDownloadSession.cpp" />
+    <ClCompile Include="nmco_api\NMFiles.cpp" />
+    <ClCompile Include="nmco_api\NMFunctionObject.cpp" />
+    <ClCompile Include="nmco_api\NMFUSFileUploadSession.cpp" />
+    <ClCompile Include="nmco_api\NMGSGeneralSession.cpp" />
+    <ClCompile Include="nmco_api\NMManager.cpp" />
+    <ClCompile Include="nmco_api\NMSerializable.cpp" />
+    <ClCompile Include="nmco_api\NMWSWBSession.cpp" />
+    <ClCompile Include="output.cpp" />
+    <ClCompile Include="thread_manager.cpp" />
+    <ClCompile Include="utility.cpp" />
+    <ClCompile Include="windows_injector.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D80278EB-C9D6-46A1-B228-7B2EA6767533}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FireflyLibrary</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_PRODUCTION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

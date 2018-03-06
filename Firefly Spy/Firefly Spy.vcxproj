@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Production|Win32">
+      <Configuration>Production</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07AE7C5D-6C82-458E-8D1B-E1386F6A3E1F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FireflySpy</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;FIREFLYSPY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Firefly Network Library\;..\Firefly Library\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;FIREFLYSPY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Firefly Network Library\;..\Firefly Library\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;FIREFLYSPY_EXPORTS;_PRODUCTION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Firefly Network Library\;..\Firefly Library\;D:\Programs\VMProtect Professional\Include\C;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>D:\Programs\VMProtect Professional\Lib\COFF\VMProtectSDK32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>"D:\Programs\VMProtect Professional\VMProtect_Con.exe" "$(TargetDir)$(ProjectName).dll" "$(TargetDir)$(ProjectName).vmp.dll" -pf "$(TargetDir)$(ProjectName).dll.vmp"
+"G:\Hacking\Games\MapleStory\sources (new ones)\CrapInjector\Release\CrapPacker.exe" "$(TargetDir)$(ProjectName).vmp.dll" "$(TargetDir)$(ProjectName).vmp.en.dll"
+copy "$(TargetDir)$(ProjectName).vmp.en.dll" "$(TargetDir)final\server\ffspy.dll" /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="autobotting_data.cpp" />
+    <ClCompile Include="autologin_data.cpp" />
+    <ClCompile Include="autobotting_hooks.cpp" />
+    <ClCompile Include="autologin_hooks.cpp" />
+    <ClCompile Include="autoshop_data.cpp" />
+    <ClCompile Include="detours.cpp" />
+    <ClCompile Include="exclusive_data.cpp" />
+    <ClCompile Include="exclusive_hooks.cpp" />
+    <ClCompile Include="game_bypass.cpp" />
+    <ClCompile Include="generic_hooks.cpp" />
+    <ClCompile Include="hack_data.cpp" />
+    <ClCompile Include="hack_hooks.cpp" />
+    <ClCompile Include="itemfilter_data.cpp" />
+    <ClCompile Include="itemfilter_hooks.cpp" />
+    <ClCompile Include="itemfilter_list.cpp" />
+    <ClCompile Include="kami_data.cpp" />
+    <ClCompile Include="kami_hooks.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="network_client.cpp" />
+    <ClCompile Include="nexon_api.cpp" />
+    <ClCompile Include="ngs_bypass.cpp" />
+    <ClCompile Include="rusher_data.cpp" />
+    <ClCompile Include="rusher_entry.cpp" />
+    <ClCompile Include="spawncontrol_data.cpp" />
+    <ClCompile Include="spawncontrol_entry.cpp" />
+    <ClCompile Include="spawncontrol_hooks.cpp" />
+    <ClCompile Include="windows_hooks.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Firefly Library\Firefly Library.vcxproj">
+      <Project>{d80278eb-c9d6-46a1-b228-7b2ea6767533}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly Network Library\Firefly Network Library.vcxproj">
+      <Project>{de31160f-f261-435a-829f-124d8f10915e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="addresses.hpp" />
+    <ClInclude Include="autobotting_data.hpp" />
+    <ClInclude Include="autobotting_hook_data.hpp" />
+    <ClInclude Include="autologin_data.hpp" />
+    <ClInclude Include="autobotting_hooks.hpp" />
+    <ClInclude Include="autologin_hooks.hpp" />
+    <ClInclude Include="autologin_hook_data.hpp" />
+    <ClInclude Include="autoshop_data.hpp" />
+    <ClInclude Include="context_objects.hpp" />
+    <ClInclude Include="detours.hpp" />
+    <ClInclude Include="drop_objects.hpp" />
+    <ClInclude Include="exclusive_data.hpp" />
+    <ClInclude Include="exclusive_hooks.hpp" />
+    <ClInclude Include="exclusive_hook_data.hpp" />
+    <ClInclude Include="game_bypass.hpp" />
+    <ClInclude Include="generic_hooks.hpp" />
+    <ClInclude Include="generic_hook_data.hpp" />
+    <ClInclude Include="generic_objects.hpp" />
+    <ClInclude Include="hack_data.hpp" />
+    <ClInclude Include="hack_hooks.hpp" />
+    <ClInclude Include="hack_hook_data.hpp" />
+    <ClInclude Include="itemfilter_data.hpp" />
+    <ClInclude Include="itemfilter_list.hpp" />
+    <ClInclude Include="itemfilter_hooks.hpp" />
+    <ClInclude Include="itemfilter_hook_data.hpp" />
+    <ClInclude Include="kami_data.hpp" />
+    <ClInclude Include="kami_hooks.hpp" />
+    <ClInclude Include="kami_hook_data.hpp" />
+    <ClInclude Include="keyboard_objects.hpp" />
+    <ClInclude Include="life_objects.hpp" />
+    <ClInclude Include="login_objects.hpp" />
+    <ClInclude Include="map_objects.hpp" />
+    <ClInclude Include="mob_objects.hpp" />
+    <ClInclude Include="network_client.hpp" />
+    <ClInclude Include="nexon_api.hpp" />
+    <ClInclude Include="ngs_bypass.hpp" />
+    <ClInclude Include="packet_objects.hpp" />
+    <ClInclude Include="pointer.hpp" />
+    <ClInclude Include="portal_objects.hpp" />
+    <ClInclude Include="rusher_data.hpp" />
+    <ClInclude Include="rusher_entry.hpp" />
+    <ClInclude Include="skill_objects.hpp" />
+    <ClInclude Include="space_objects.hpp" />
+    <ClInclude Include="spawncontrol_data.hpp" />
+    <ClInclude Include="spawncontrol_entry.hpp" />
+    <ClInclude Include="spawncontrol_hooks.hpp" />
+    <ClInclude Include="spawncontrol_hook_data.hpp" />
+    <ClInclude Include="stat_objects.hpp" />
+    <ClInclude Include="TSecType.hpp" />
+    <ClInclude Include="TSingleton.hpp" />
+    <ClInclude Include="windows_hooks.hpp" />
+    <ClInclude Include="ZArray.hpp" />
+    <ClInclude Include="ZException.hpp" />
+    <ClInclude Include="ZList.hpp" />
+    <ClInclude Include="ZMap.hpp" />
+    <ClInclude Include="ZRef.hpp" />
+    <ClInclude Include="ZRefCounted.hpp" />
+    <ClInclude Include="ZtlSecure.hpp" />
+    <ClInclude Include="ZXString.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

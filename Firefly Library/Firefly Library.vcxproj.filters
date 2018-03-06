@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="io">
+      <UniqueIdentifier>{150ca1ed-49dd-448b-a1e6-fd2fedd6ccd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\file_writer">
+      <UniqueIdentifier>{8add3233-3e66-4edb-99c6-2abab954adc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\file_reader">
+      <UniqueIdentifier>{e24278cc-a36f-4262-bd76-d8d723742958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{c9c1ee08-6f03-43d8-9326-53928c32b0ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared">
+      <UniqueIdentifier>{8b38cc85-a6a0-4e17-95b5-e4e443b86067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\file_mapper">
+      <UniqueIdentifier>{655f66cc-d1e3-4604-a5d2-e477364aa435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="intercommunication">
+      <UniqueIdentifier>{e6708a1a-b6a9-4920-a859-98c83379801f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native">
+      <UniqueIdentifier>{d0549f6f-c463-485f-9245-38b39eee887c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\types">
+      <UniqueIdentifier>{0a3f25dd-fb80-4324-8052-c33c13be9b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\pe">
+      <UniqueIdentifier>{b4fc8d52-8f66-42d3-9752-1d443721ac8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\output">
+      <UniqueIdentifier>{776ce716-2462-4d13-b14a-2a05edeb31c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="manual mapper">
+      <UniqueIdentifier>{215d72c8-d930-482e-a14d-0330aa860c94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="manual mapper\windows injector">
+      <UniqueIdentifier>{7ed18228-205b-4866-ba11-8b78634beb10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="manual mapper\thread manager">
+      <UniqueIdentifier>{3a1f702a-2df2-4d04-848f-b5c0246df2be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory">
+      <UniqueIdentifier>{8e9d67bd-c0fb-4edb-b2c5-9f2bdebca81c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory\detours">
+      <UniqueIdentifier>{edb0cefe-fd9e-4769-9e65-b4ae2112bee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nmco">
+      <UniqueIdentifier>{25ee6750-8d69-46cf-aa83-9a2c1c79d867}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="native.hpp">
+      <Filter>native</Filter>
+    </ClInclude>
+    <ClInclude Include="file_reader.hpp">
+      <Filter>io\file_reader</Filter>
+    </ClInclude>
+    <ClInclude Include="file_writer.hpp">
+      <Filter>io\file_writer</Filter>
+    </ClInclude>
+    <ClInclude Include="utility.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="basic_types.hpp">
+      <Filter>native\types</Filter>
+    </ClInclude>
+    <ClInclude Include="pe_structs.hpp">
+      <Filter>native\pe</Filter>
+    </ClInclude>
+    <ClInclude Include="output.hpp">
+      <Filter>native\output</Filter>
+    </ClInclude>
+    <ClInclude Include="hack_types.hpp">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="file_mapper.hpp">
+      <Filter>io\file_mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="aes_constants.hpp">
+      <Filter>intercommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_manager.hpp">
+      <Filter>manual mapper\thread manager</Filter>
+    </ClInclude>
+    <ClInclude Include="windows_injector.hpp">
+      <Filter>manual mapper\windows injector</Filter>
+    </ClInclude>
+    <ClInclude Include="manual_mapper.hpp">
+      <Filter>manual mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="detours.hpp">
+      <Filter>memory\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="botting_types.hpp">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="exclusive_types.hpp">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMCOClientObject.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMCOHelpers.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMCONew.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMCRChatRoom.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMCSChatSession.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMDataObject.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMEventHandler.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMEventObject.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMFDSFileDownloadSession.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMFunctionObject.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMFUSFileUploadSession.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMGeneral.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMGSGeneralSession.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMManager.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMPCH.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMPCH2.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMSerializable.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\NMWSWBSession.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+    <ClInclude Include="nmco_api\PCH.h">
+      <Filter>nmco</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="file_reader.cpp">
+      <Filter>io\file_reader</Filter>
+    </ClCompile>
+    <ClCompile Include="file_writer.cpp">
+      <Filter>io\file_writer</Filter>
+    </ClCompile>
+    <ClCompile Include="utility.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="basic_types.cpp">
+      <Filter>native\types</Filter>
+    </ClCompile>
+    <ClCompile Include="output.cpp">
+      <Filter>native\output</Filter>
+    </ClCompile>
+    <ClCompile Include="file_mapper.cpp">
+      <Filter>io\file_mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_manager.cpp">
+      <Filter>manual mapper\thread manager</Filter>
+    </ClCompile>
+    <ClCompile Include="windows_injector.cpp">
+      <Filter>manual mapper\windows injector</Filter>
+    </ClCompile>
+    <ClCompile Include="manual_mapper.cpp">
+      <Filter>manual mapper</Filter>
+    </ClCompile>
+    <ClCompile Include="detours.cpp">
+      <Filter>memory\detours</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMCOClientObject.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMCOHelpers.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMCRChatRoom.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMCSChatSession.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMDataObject.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMEventHandler.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMEventObject.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMFDSFileDownloadSession.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMFiles.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMFunctionObject.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMFUSFileUploadSession.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMGSGeneralSession.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMManager.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMSerializable.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+    <ClCompile Include="nmco_api\NMWSWBSession.cpp">
+      <Filter>nmco</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

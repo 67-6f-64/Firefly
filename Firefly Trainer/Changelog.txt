@@ -1,0 +1,52 @@
+Firefly v1.0
+- Added file-version verification, so you are notified if you need to update your client.
+
+Firefly v1.1
+- Added a check to the rush-path for rusher.
+- Fixed the off-screen textbox bug.
+- Removed the edit-restriction to allow reconfiguration while a main-toggle is on (You must re-toggle for changes to take into effect).
+- Changed the length-limit for the filter mesos to 5 characters instead of 4 (I would limit it to <= 50.000, but since I've seen mesos-bags with 68.000 mesos, etc., I will not do so).
+- Set an automatic startup position for the game-client to (0, 0), which is the top-left corner.
+- Remade the no-knockback to only target body-attacks.
+- Removed the knockback unlimited attack and no knockback restriction (only one could be active at a time).
+- Recast auto-skills after login.
+
+Firefly v1.2
+- Added activation toggles for single items in the tabs "Auto Botting", "Hacks", "Exclusive". You can now toggle single items on/off without toggle on/off the Main Toggle.
+- Added extra suggestions to the fullmap attack and skill inject id lists in the Exclusive tab.
+- Added two additional CPU hacks; "No Hit Effect" and "No Kill Text". It will effectively remove the animation of your skill hitting the enemy, and the combo/multikill texts.
+- Fixed a bug in the scrollbar/listview correlation. The scrollbar now sizes itself automatically, and reset when deleting items.
+- Fixed loads of bugs to the listview/tabbar correlation.
+- Fixed some selection-bugs in the listview and added key up/down navigation.
+- Fixed a connection bug between the trainer and MapleStory.
+- Removed the tab-bar from the Map Rusher. All previous functionality is now merged into one list.
+- Changed the way the suggestion id lists in the Exclusive tab looks (for easier navigation).
+- I found a deadlock in the map-rusher's path generator. Will probably rewrite the entire thing (and possibly make it intercontinental).
+
+Firefly v1.3
+- Fixed a small issue with the ListView (would crash upon closure, instead of closing silently).
+- Fixed a Spawn Control loading error (it generated map-names dynamically now).
+- Added a wait for channel-change to the Map Rusher (it now waits for the change-channel before entering portals).
+- Improved the Fullmap Attack by removing the view-limit. It now hits all mobs on the entire map (regardless of map size).
+- Revamped the scrollbar. The underlying model is much different and more stable/applicable regarding other controls. The design has also improved to be more consistent with the rest of the GUI.
+
+Firefly v1.4
+- Revamped the scrollbar - again. This time to fix issues when the scrollbar was handling larger pages (e.g. listviews with over 100 elements).
+- Added web-login to the Auto Login and enforced this as the only option (on March 23rd 2017, Nexon disables regular client launches).
+- Added whitelist (names) for Auto Evade.
+- Added "Auto NPC", "Auto Rune" and "Auto Sudden Mission" to the Hacks tab.
+
+TODO:
+- Add Blazing Extinction shit (Auto-cast, and scripts. Remember platform/airchecks)
+- Add Unlimited Buff
+- Add Auto NPC (Skip through NPC dialogs)
+- Add Portal Teleport (Assign key to iterate through portals)
+- Add GND for Skill Injection
+- Add unlimited flashjump
+- Add CPU-hacks for removing ingame UIs (Quest Helper, Maple Guide, Reward Points, etc.)
+- Add more auto-skills (or maybe change to a manageable list).
+- Xenon: Add an option to automatically choose the correct attacking skill using "Modal Shift" (it changes back to the default skill after restarting the client).
+- Improve Map Rusher (use ingame rusher?).
+
+No Delaying / Proper Skill Injection
+No cooldown

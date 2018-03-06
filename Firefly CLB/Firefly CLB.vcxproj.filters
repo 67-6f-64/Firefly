@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resources">
+      <UniqueIdentifier>{0531df00-6c4e-4035-94c7-e4b11431ed4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{d24a2797-f82e-449d-9b9c-aefe63d1bd8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{e0561c72-7fe3-4936-8802-b99f215ec14a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly">
+      <UniqueIdentifier>{99622712-1789-46e3-a93e-6079483b6570}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages">
+      <UniqueIdentifier>{4c4daf56-c8b7-4203-b376-464b51267d7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\stages">
+      <UniqueIdentifier>{7dea0504-c667-4cee-bf70-de158d7982a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\stages\base">
+      <UniqueIdentifier>{3a88b79a-e4ff-4300-b2c2-117c62d16286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\stages\login">
+      <UniqueIdentifier>{e46f8c22-10a4-493f-80c7-23c678c6c785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\instance">
+      <UniqueIdentifier>{654ce15a-c8c0-43a9-ac49-214f44950859}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\main">
+      <UniqueIdentifier>{e5b62aab-8fd7-4a37-807f-ab83054cef8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\settings">
+      <UniqueIdentifier>{5b830aff-0a38-4a06-bc2e-ddc3e9afbb99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\instance\client_socket">
+      <UniqueIdentifier>{82ca16dc-ee51-4f58-bb7b-e73f449c6c17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\instance\client_socket\base">
+      <UniqueIdentifier>{41b07dc0-ba7e-4b05-93a6-87731533e540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\instance\client_socket\buffer">
+      <UniqueIdentifier>{0dc716e4-4195-4d0c-98e1-1134cc1b0158}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\instance\client_socket\crypto">
+      <UniqueIdentifier>{ceda1ee0-61b7-43a1-9e56-0439a4434640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\instance\client_socket\crypto\rijndael">
+      <UniqueIdentifier>{7752bb8a-1ba2-494c-93bd-cac0f010c7db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\headers">
+      <UniqueIdentifier>{a8e71c47-b668-4603-a6ea-bbee8114954c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\stages\game">
+      <UniqueIdentifier>{b98a7bc1-da04-4f43-8a1e-e346a9de45af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\swag">
+      <UniqueIdentifier>{3429e822-8c13-42db-b799-cf0d09e760c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\swag\structures">
+      <UniqueIdentifier>{1ebe1025-a777-45c7-bb36-5061960db1c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\swag\namespaces">
+      <UniqueIdentifier>{897f3517-df5f-47ea-a7fb-bb4730918809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\swag\namespaces\system_info">
+      <UniqueIdentifier>{3d69452e-a105-4b07-b9a1-969cf097867c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\swag\namespaces\job">
+      <UniqueIdentifier>{808dd50e-db36-4947-ae57-96e6078a2a22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\swag\namespaces\crc32">
+      <UniqueIdentifier>{305e392d-a95a-4531-b2fe-7a1805ba2537}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="main_window.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_tabpage.cpp">
+      <Filter>gui\tabpages</Filter>
+    </ClCompile>
+    <ClCompile Include="instance_tabpage.cpp">
+      <Filter>gui\tabpages\instance</Filter>
+    </ClCompile>
+    <ClCompile Include="login_stage.cpp">
+      <Filter>firefly\stages\login</Filter>
+    </ClCompile>
+    <ClCompile Include="main_tabpage.cpp">
+      <Filter>gui\tabpages\main</Filter>
+    </ClCompile>
+    <ClCompile Include="settings_tabpage.cpp">
+      <Filter>gui\tabpages\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="client_socket.cpp">
+      <Filter>gui\tabpages\instance\client_socket</Filter>
+    </ClCompile>
+    <ClCompile Include="client_socket_base.cpp">
+      <Filter>gui\tabpages\instance\client_socket\base</Filter>
+    </ClCompile>
+    <ClCompile Include="net_buffer.cpp">
+      <Filter>gui\tabpages\instance\client_socket\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="rijndael.cpp">
+      <Filter>gui\tabpages\instance\client_socket\crypto\rijndael</Filter>
+    </ClCompile>
+    <ClCompile Include="client_socket_crypto.cpp">
+      <Filter>gui\tabpages\instance\client_socket\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="game_stage.cpp">
+      <Filter>firefly\stages\game</Filter>
+    </ClCompile>
+    <ClCompile Include="system_info.cpp">
+      <Filter>firefly\swag\namespaces\system_info</Filter>
+    </ClCompile>
+    <ClCompile Include="job.cpp">
+      <Filter>firefly\swag\namespaces\job</Filter>
+    </ClCompile>
+    <ClCompile Include="crc32.cpp">
+      <Filter>firefly\swag\namespaces\crc32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main_window.hpp">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.hpp">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="custom_tabpage.hpp">
+      <Filter>gui\tabpages</Filter>
+    </ClInclude>
+    <ClInclude Include="instance_tabpage.hpp">
+      <Filter>gui\tabpages\instance</Filter>
+    </ClInclude>
+    <ClInclude Include="base_stage.hpp">
+      <Filter>firefly\stages\base</Filter>
+    </ClInclude>
+    <ClInclude Include="main_tabpage.hpp">
+      <Filter>gui\tabpages\main</Filter>
+    </ClInclude>
+    <ClInclude Include="settings_tabpage.hpp">
+      <Filter>gui\tabpages\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="login_stage.hpp">
+      <Filter>firefly\stages\login</Filter>
+    </ClInclude>
+    <ClInclude Include="client_socket.hpp">
+      <Filter>gui\tabpages\instance\client_socket</Filter>
+    </ClInclude>
+    <ClInclude Include="client_socket_base.hpp">
+      <Filter>gui\tabpages\instance\client_socket\base</Filter>
+    </ClInclude>
+    <ClInclude Include="net_buffer.hpp">
+      <Filter>gui\tabpages\instance\client_socket\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="rijndael.hpp">
+      <Filter>gui\tabpages\instance\client_socket\crypto\rijndael</Filter>
+    </ClInclude>
+    <ClInclude Include="rijndael_tables.hpp">
+      <Filter>gui\tabpages\instance\client_socket\crypto\rijndael</Filter>
+    </ClInclude>
+    <ClInclude Include="client_socket_crypto.hpp">
+      <Filter>gui\tabpages\instance\client_socket\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="config.hpp">
+      <Filter>firefly\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="opcodes.hpp">
+      <Filter>firefly\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="game_stage.hpp">
+      <Filter>firefly\stages\game</Filter>
+    </ClInclude>
+    <ClInclude Include="account.hpp">
+      <Filter>firefly\swag\structures</Filter>
+    </ClInclude>
+    <ClInclude Include="system_info.hpp">
+      <Filter>firefly\swag\namespaces\system_info</Filter>
+    </ClInclude>
+    <ClInclude Include="job.hpp">
+      <Filter>firefly\swag\namespaces\job</Filter>
+    </ClInclude>
+    <ClInclude Include="character_info.hpp">
+      <Filter>firefly\swag\structures</Filter>
+    </ClInclude>
+    <ClInclude Include="crc32.hpp">
+      <Filter>firefly\swag\namespaces\crc32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

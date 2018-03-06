@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{674BA0D0-F2AA-4DAA-B765-EEE4CFC4D9CC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FireflyCLB</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Firefly Network Library\;..\Firefly GUI Library\;..\Firefly Library\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\Firefly GUI Library\Release\resource.res;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Firefly Library\;..\Firefly GUI Library\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\Firefly GUI Library\Release\resource.res;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Firefly Library\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="client_socket_base.cpp" />
+    <ClCompile Include="client_socket.cpp" />
+    <ClCompile Include="client_socket_crypto.cpp" />
+    <ClCompile Include="crc32.cpp" />
+    <ClCompile Include="game_stage.cpp" />
+    <ClCompile Include="instance_tabpage.cpp" />
+    <ClCompile Include="custom_tabpage.cpp" />
+    <ClCompile Include="job.cpp" />
+    <ClCompile Include="login_stage.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main_tabpage.cpp" />
+    <ClCompile Include="main_window.cpp" />
+    <ClCompile Include="net_buffer.cpp" />
+    <ClCompile Include="rijndael.cpp" />
+    <ClCompile Include="settings_tabpage.cpp" />
+    <ClCompile Include="system_info.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Firefly GUI Library\Firefly GUI Library.vcxproj">
+      <Project>{15943a0a-6a1d-4e83-89e3-7808d4452dd0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly Library\Firefly Library.vcxproj">
+      <Project>{d80278eb-c9d6-46a1-b228-7b2ea6767533}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="account.hpp" />
+    <ClInclude Include="base_stage.hpp" />
+    <ClInclude Include="character_info.hpp" />
+    <ClInclude Include="client_socket.hpp" />
+    <ClInclude Include="client_socket_base.hpp" />
+    <ClInclude Include="client_socket_crypto.hpp" />
+    <ClInclude Include="config.hpp" />
+    <ClInclude Include="crc32.hpp" />
+    <ClInclude Include="game_stage.hpp" />
+    <ClInclude Include="job.hpp" />
+    <ClInclude Include="login_stage.hpp" />
+    <ClInclude Include="instance_tabpage.hpp" />
+    <ClInclude Include="custom_tabpage.hpp" />
+    <ClInclude Include="main_tabpage.hpp" />
+    <ClInclude Include="main_window.hpp" />
+    <ClInclude Include="net_buffer.hpp" />
+    <ClInclude Include="opcodes.hpp" />
+    <ClInclude Include="resource.hpp" />
+    <ClInclude Include="rijndael.hpp" />
+    <ClInclude Include="rijndael_tables.hpp" />
+    <ClInclude Include="settings_tabpage.hpp" />
+    <ClInclude Include="system_info.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

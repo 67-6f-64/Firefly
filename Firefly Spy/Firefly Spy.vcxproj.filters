@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{f6365aa6-6a71-4e14-9fb1-172d92ba7782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory">
+      <UniqueIdentifier>{8816b125-5d77-465e-a7d9-f0fda528b5d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{2cdb0174-4d41-490d-bb01-24f9d15decef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\bypass">
+      <UniqueIdentifier>{4806f3e9-bf34-4a18-881d-72000b2737b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory\detours">
+      <UniqueIdentifier>{921d0fce-63a7-4da5-8d10-fdc80b731886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\bypass\nexon game security">
+      <UniqueIdentifier>{afc862aa-4f56-4fe6-8c27-d0dba133082b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="intercommunication">
+      <UniqueIdentifier>{de584cca-9338-464a-acf5-3e19ffc517f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory">
+      <UniqueIdentifier>{546c0dbe-bada-4866-96a2-0fcc6b708c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\api hooks">
+      <UniqueIdentifier>{916d7af5-e017-4737-bc87-7be0cbd03940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game hooks">
+      <UniqueIdentifier>{291d1e3e-ee6e-4b76-b1f6-c61e8d7eb780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game data">
+      <UniqueIdentifier>{24148703-1803-4241-b2e5-87af0ecc5789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory\pointer">
+      <UniqueIdentifier>{71c291a0-5be9-463e-9da7-0e9ac7f862b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game data\kami">
+      <UniqueIdentifier>{aa5b9d43-369f-4dbb-98b3-6e8669285b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game data\rusher">
+      <UniqueIdentifier>{db49678c-4dc3-4eb2-b1d4-e3abb6d2af5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game data\spawncontrol">
+      <UniqueIdentifier>{883534d3-90e7-490c-8bd1-d99bf12e1979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game data\autologin">
+      <UniqueIdentifier>{5eed7ff3-a619-4bef-9cdf-6a002abcb3c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game data\autoshop">
+      <UniqueIdentifier>{43755480-a333-4b93-9dc0-fba88a709a30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game data\autobotting">
+      <UniqueIdentifier>{9c441a7f-3aea-4219-9848-17aa7ef21573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game data\itemfilter">
+      <UniqueIdentifier>{4ac24ac8-14b4-48ea-b0a0-03fae3a5bbb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\structures">
+      <UniqueIdentifier>{2794a5e9-779d-4554-9111-a9a1216172bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\structures\objects">
+      <UniqueIdentifier>{ee7ae1a8-f202-4dba-bfd2-f7e896024bf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game hooks\hooks">
+      <UniqueIdentifier>{b3329d8a-39b8-4cb0-a9ca-d4f14080f9ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game hooks\data">
+      <UniqueIdentifier>{a7bd0589-37dc-4f96-976f-e3da9423f8ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game hooks\hooks\autologin">
+      <UniqueIdentifier>{93acc9d5-2e08-4369-85ef-f7a1a2caab43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game hooks\hooks\autobotting">
+      <UniqueIdentifier>{50f3ba52-12ca-4766-b0d4-326db126c836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game hooks\hooks\itemfilter">
+      <UniqueIdentifier>{2b4631da-f6d5-444f-a4b2-f065b76cf2c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game hooks\hooks\spawncontrol">
+      <UniqueIdentifier>{33855307-7200-4e00-b3bd-f414cf8e94e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game hooks\hooks\kami">
+      <UniqueIdentifier>{d444237e-4f89-469b-906f-cccf2b28708a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game hooks\hooks\generic">
+      <UniqueIdentifier>{cfc6a640-da77-4e30-a1c1-c5edd0451596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game data\spawncontrol\helper">
+      <UniqueIdentifier>{e576b81b-9962-48ce-bbb6-5e38279fa221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game data\itemfilter\helper">
+      <UniqueIdentifier>{7084b790-485c-4dd6-8441-d849c1c87d09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game data\rusher\helper">
+      <UniqueIdentifier>{ada8432a-07b7-4e23-96cc-c29a4aebd006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game data\exclusive">
+      <UniqueIdentifier>{efb4a08e-cfc3-4cab-92e2-66812086f64d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game hooks\hooks\hacks">
+      <UniqueIdentifier>{035a8e09-18cf-4efb-bd86-456c766fef0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game hooks\hooks\exclusive">
+      <UniqueIdentifier>{2e772a8e-a42a-40c1-b591-211f13a48002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\game data\hack">
+      <UniqueIdentifier>{2b54063b-56a8-48a3-bb4e-0b4daa8f7f84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\bypass\maplestory">
+      <UniqueIdentifier>{4a59d4fa-c659-46d5-918b-f1ff24cc1cbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\api hooks\nexon api">
+      <UniqueIdentifier>{fd4be515-03c4-4851-b07c-687a555d49f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\memory\structures\datatypes">
+      <UniqueIdentifier>{339d13fd-8679-4362-b07d-3ac808868934}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="detours.cpp">
+      <Filter>memory\detours</Filter>
+    </ClCompile>
+    <ClCompile Include="ngs_bypass.cpp">
+      <Filter>game\bypass\nexon game security</Filter>
+    </ClCompile>
+    <ClCompile Include="network_client.cpp">
+      <Filter>intercommunication</Filter>
+    </ClCompile>
+    <ClCompile Include="windows_hooks.cpp">
+      <Filter>game\memory\api hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="itemfilter_hooks.cpp">
+      <Filter>game\memory\game hooks\hooks\itemfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="spawncontrol_hooks.cpp">
+      <Filter>game\memory\game hooks\hooks\spawncontrol</Filter>
+    </ClCompile>
+    <ClCompile Include="autologin_data.cpp">
+      <Filter>game\memory\game data\autologin</Filter>
+    </ClCompile>
+    <ClCompile Include="kami_data.cpp">
+      <Filter>game\memory\game data\kami</Filter>
+    </ClCompile>
+    <ClCompile Include="itemfilter_data.cpp">
+      <Filter>game\memory\game data\itemfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="rusher_data.cpp">
+      <Filter>game\memory\game data\rusher</Filter>
+    </ClCompile>
+    <ClCompile Include="spawncontrol_data.cpp">
+      <Filter>game\memory\game data\spawncontrol</Filter>
+    </ClCompile>
+    <ClCompile Include="autobotting_data.cpp">
+      <Filter>game\memory\game data\autobotting</Filter>
+    </ClCompile>
+    <ClCompile Include="autoshop_data.cpp">
+      <Filter>game\memory\game data\autoshop</Filter>
+    </ClCompile>
+    <ClCompile Include="autobotting_hooks.cpp">
+      <Filter>game\memory\game hooks\hooks\autobotting</Filter>
+    </ClCompile>
+    <ClCompile Include="autologin_hooks.cpp">
+      <Filter>game\memory\game hooks\hooks\autologin</Filter>
+    </ClCompile>
+    <ClCompile Include="kami_hooks.cpp">
+      <Filter>game\memory\game hooks\hooks\kami</Filter>
+    </ClCompile>
+    <ClCompile Include="generic_hooks.cpp">
+      <Filter>game\memory\game hooks\hooks\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="spawncontrol_entry.cpp">
+      <Filter>game\memory\game data\spawncontrol\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="itemfilter_list.cpp">
+      <Filter>game\memory\game data\itemfilter\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="rusher_entry.cpp">
+      <Filter>game\memory\game data\rusher\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="exclusive_data.cpp">
+      <Filter>game\memory\game data\exclusive</Filter>
+    </ClCompile>
+    <ClCompile Include="exclusive_hooks.cpp">
+      <Filter>game\memory\game hooks\hooks\exclusive</Filter>
+    </ClCompile>
+    <ClCompile Include="hack_hooks.cpp">
+      <Filter>game\memory\game hooks\hooks\hacks</Filter>
+    </ClCompile>
+    <ClCompile Include="hack_data.cpp">
+      <Filter>game\memory\game data\hack</Filter>
+    </ClCompile>
+    <ClCompile Include="game_bypass.cpp">
+      <Filter>game\bypass\maplestory</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api.cpp">
+      <Filter>game\memory\api hooks\nexon api</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="detours.hpp">
+      <Filter>memory\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="ngs_bypass.hpp">
+      <Filter>game\bypass\nexon game security</Filter>
+    </ClInclude>
+    <ClInclude Include="network_client.hpp">
+      <Filter>intercommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="itemfilter_hooks.hpp">
+      <Filter>game\memory\game hooks\hooks\itemfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="spawncontrol_hooks.hpp">
+      <Filter>game\memory\game hooks\hooks\spawncontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="windows_hooks.hpp">
+      <Filter>game\memory\api hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="autologin_data.hpp">
+      <Filter>game\memory\game data\autologin</Filter>
+    </ClInclude>
+    <ClInclude Include="kami_data.hpp">
+      <Filter>game\memory\game data\kami</Filter>
+    </ClInclude>
+    <ClInclude Include="itemfilter_data.hpp">
+      <Filter>game\memory\game data\itemfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="rusher_data.hpp">
+      <Filter>game\memory\game data\rusher</Filter>
+    </ClInclude>
+    <ClInclude Include="spawncontrol_data.hpp">
+      <Filter>game\memory\game data\spawncontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="pointer.hpp">
+      <Filter>memory\pointer</Filter>
+    </ClInclude>
+    <ClInclude Include="autobotting_data.hpp">
+      <Filter>game\memory\game data\autobotting</Filter>
+    </ClInclude>
+    <ClInclude Include="autoshop_data.hpp">
+      <Filter>game\memory\game data\autoshop</Filter>
+    </ClInclude>
+    <ClInclude Include="autobotting_hooks.hpp">
+      <Filter>game\memory\game hooks\hooks\autobotting</Filter>
+    </ClInclude>
+    <ClInclude Include="TSecType.hpp">
+      <Filter>game\memory\structures\datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="ZArray.hpp">
+      <Filter>game\memory\structures\datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="ZRef.hpp">
+      <Filter>game\memory\structures\datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="ZXString.hpp">
+      <Filter>game\memory\structures\datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="autologin_hooks.hpp">
+      <Filter>game\memory\game hooks\hooks\autologin</Filter>
+    </ClInclude>
+    <ClInclude Include="ZMap.hpp">
+      <Filter>game\memory\structures\datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="ZList.hpp">
+      <Filter>game\memory\structures\datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="autobotting_hook_data.hpp">
+      <Filter>game\memory\game hooks\data</Filter>
+    </ClInclude>
+    <ClInclude Include="itemfilter_hook_data.hpp">
+      <Filter>game\memory\game hooks\data</Filter>
+    </ClInclude>
+    <ClInclude Include="autologin_hook_data.hpp">
+      <Filter>game\memory\game hooks\data</Filter>
+    </ClInclude>
+    <ClInclude Include="kami_hooks.hpp">
+      <Filter>game\memory\game hooks\hooks\kami</Filter>
+    </ClInclude>
+    <ClInclude Include="kami_hook_data.hpp">
+      <Filter>game\memory\game hooks\data</Filter>
+    </ClInclude>
+    <ClInclude Include="ZtlSecure.hpp">
+      <Filter>game\memory\structures\datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="mob_objects.hpp">
+      <Filter>game\memory\structures\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="drop_objects.hpp">
+      <Filter>game\memory\structures\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ZException.hpp">
+      <Filter>game\memory\structures\datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="login_objects.hpp">
+      <Filter>game\memory\structures\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="portal_objects.hpp">
+      <Filter>game\memory\structures\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="TSingleton.hpp">
+      <Filter>game\memory\structures\datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="life_objects.hpp">
+      <Filter>game\memory\structures\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="packet_objects.hpp">
+      <Filter>game\memory\structures\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="addresses.hpp">
+      <Filter>game\memory\game hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="keyboard_objects.hpp">
+      <Filter>game\memory\structures\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="generic_objects.hpp">
+      <Filter>game\memory\structures\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="generic_hook_data.hpp">
+      <Filter>game\memory\game hooks\data</Filter>
+    </ClInclude>
+    <ClInclude Include="generic_hooks.hpp">
+      <Filter>game\memory\game hooks\hooks\generic</Filter>
+    </ClInclude>
+    <ClInclude Include="space_objects.hpp">
+      <Filter>game\memory\structures\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="spawncontrol_hook_data.hpp">
+      <Filter>game\memory\game hooks\data</Filter>
+    </ClInclude>
+    <ClInclude Include="spawncontrol_entry.hpp">
+      <Filter>game\memory\game data\spawncontrol\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="itemfilter_list.hpp">
+      <Filter>game\memory\game data\itemfilter\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="map_objects.hpp">
+      <Filter>game\memory\structures\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ZRefCounted.hpp">
+      <Filter>game\memory\structures\datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="rusher_entry.hpp">
+      <Filter>game\memory\game data\rusher\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="context_objects.hpp">
+      <Filter>game\memory\structures\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="exclusive_data.hpp">
+      <Filter>game\memory\game data\exclusive</Filter>
+    </ClInclude>
+    <ClInclude Include="exclusive_hooks.hpp">
+      <Filter>game\memory\game hooks\hooks\exclusive</Filter>
+    </ClInclude>
+    <ClInclude Include="exclusive_hook_data.hpp">
+      <Filter>game\memory\game hooks\data</Filter>
+    </ClInclude>
+    <ClInclude Include="hack_hooks.hpp">
+      <Filter>game\memory\game hooks\hooks\hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="hack_data.hpp">
+      <Filter>game\memory\game data\hack</Filter>
+    </ClInclude>
+    <ClInclude Include="hack_hook_data.hpp">
+      <Filter>game\memory\game hooks\data</Filter>
+    </ClInclude>
+    <ClInclude Include="stat_objects.hpp">
+      <Filter>game\memory\structures\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game_bypass.hpp">
+      <Filter>game\bypass\maplestory</Filter>
+    </ClInclude>
+    <ClInclude Include="skill_objects.hpp">
+      <Filter>game\memory\structures\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api.hpp">
+      <Filter>game\memory\api hooks\nexon api</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

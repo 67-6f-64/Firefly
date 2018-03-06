@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sockets">
+      <UniqueIdentifier>{264efdc8-16bc-41a5-94be-17a3020bf7af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sockets\buffer">
+      <UniqueIdentifier>{e0bb4ff7-b7a2-4a32-a0bb-9b15c0fec067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vps">
+      <UniqueIdentifier>{cc88296b-3224-4417-bcc1-15f52402c2a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vps\data">
+      <UniqueIdentifier>{add4e5df-84e1-4017-9b51-da5134b49aba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sockets\base">
+      <UniqueIdentifier>{cd736347-1905-45ec-b493-de2c2e1542ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sockets\constants">
+      <UniqueIdentifier>{eb09dd5c-80db-4664-a1cf-620ef6cfdfd7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="net_buffer.hpp">
+      <Filter>sockets\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="net_opcodes.hpp">
+      <Filter>sockets\constants</Filter>
+    </ClInclude>
+    <ClInclude Include="vps_socket.hpp">
+      <Filter>vps</Filter>
+    </ClInclude>
+    <ClInclude Include="vps_data.hpp">
+      <Filter>vps\data</Filter>
+    </ClInclude>
+    <ClInclude Include="net_socket_sync.hpp">
+      <Filter>sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="net_socket_async.hpp">
+      <Filter>sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="net_socket.hpp">
+      <Filter>sockets\base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="net_buffer.cpp">
+      <Filter>sockets\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="vps_socket.cpp">
+      <Filter>vps</Filter>
+    </ClCompile>
+    <ClCompile Include="net_socket_sync.cpp">
+      <Filter>sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="net_socket_async.cpp">
+      <Filter>sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="net_socket.cpp">
+      <Filter>sockets\base</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

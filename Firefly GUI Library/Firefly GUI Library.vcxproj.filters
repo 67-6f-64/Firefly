@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="gui">
+      <UniqueIdentifier>{2367cb38-ecd2-4af5-9bdf-2ecc0c72eef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{f6fb15b9-b0d1-4176-9ab9-47cef25e545b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\core">
+      <UniqueIdentifier>{f536ac35-7ba7-49e7-bd66-ece3ace9153c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets">
+      <UniqueIdentifier>{3ccc6293-fba7-421d-a85e-414b5b05c031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\core\base">
+      <UniqueIdentifier>{644cfb97-d1fa-4164-adfa-27b18f3c5a1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\core\base\graphics">
+      <UniqueIdentifier>{a9f51e0f-9de1-420e-b20b-e8c1adee4b2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\base">
+      <UniqueIdentifier>{0cdaa69a-6486-42b3-8bdb-13972f71d0ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\core\messages">
+      <UniqueIdentifier>{e0a46e2f-8bac-4130-99e1-329a2b98d5ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets">
+      <UniqueIdentifier>{cca52d63-5112-4b2d-9ebe-b4000ce4ed4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\scrollbar">
+      <UniqueIdentifier>{533de507-a7b8-4257-bba1-98372125a790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\tabpage">
+      <UniqueIdentifier>{66a92218-3841-49e1-b944-9cdfdbae9fdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets">
+      <UniqueIdentifier>{87463d96-b96b-4a95-8fc3-67591d42964a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\trackbar">
+      <UniqueIdentifier>{5137d1df-f464-400d-a612-a9517d7df35d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\button">
+      <UniqueIdentifier>{9102b194-2bea-4b19-b737-0fec29c8cd1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\combobox">
+      <UniqueIdentifier>{c2d5cd65-94c9-484b-a7a7-60829b89f365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\label">
+      <UniqueIdentifier>{e1adc430-c8e8-40e9-ac03-1f67ac2ab667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\listbox">
+      <UniqueIdentifier>{64f2bd4e-1aa0-456e-a453-f22cf52720b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\panel">
+      <UniqueIdentifier>{65d891c8-aedb-474f-9ad1-1d85f0cf3077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\seperator">
+      <UniqueIdentifier>{ff9e75ab-5717-4349-8d55-b900727cb098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\textbox">
+      <UniqueIdentifier>{ccb4852a-c076-4107-ac6f-ba8d7a6abd09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\togglebox">
+      <UniqueIdentifier>{ea5ef371-9d09-4d4c-af15-519c813a0ce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\list_view">
+      <UniqueIdentifier>{df27712b-faf3-4afc-b0a3-0d4eaf028492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\tabcontrols">
+      <UniqueIdentifier>{c15a6012-16a1-4703-8e9f-a13026e4c76b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\tabcontrols\tab_menu">
+      <UniqueIdentifier>{e3c91f59-25a4-4c6d-ba5e-51859eb400e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\tabcontrols\tab_bar">
+      <UniqueIdentifier>{e6340d15-1728-4a96-8d1e-77daf4a43445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\tabcontrols\base">
+      <UniqueIdentifier>{29070bb6-fde9-4d13-b204-d9822c953864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\list_view\header">
+      <UniqueIdentifier>{f608fb31-3111-42af-9fe0-7cb3843b7522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\list_view\base">
+      <UniqueIdentifier>{f62e307d-f0f4-4eee-99f2-7c2ad7d03729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\list_view\control">
+      <UniqueIdentifier>{3ea4c95f-eb0e-4923-826c-888f2b73067e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\list_view\control\item">
+      <UniqueIdentifier>{a3276ec6-ee85-4d6b-861d-aa79c78bc9bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\list_view\header\item">
+      <UniqueIdentifier>{d4c93a70-18a9-4d8c-9f47-e54b5f894ff7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\list_view\base\item">
+      <UniqueIdentifier>{1b433e6d-96f0-4303-986e-5319d83f4143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\treeview">
+      <UniqueIdentifier>{e7e2d8f7-9d9a-4d32-b0e1-ad928dc2fab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\tooltip">
+      <UniqueIdentifier>{fc43e921-d388-4f70-bb90-2d9e2bf1530f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\window">
+      <UniqueIdentifier>{78738fd0-55c5-4ee7-a2f4-a270f1fe77f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\custom widgets\list_view\control\item\list_view_item">
+      <UniqueIdentifier>{357ea161-6a6e-42e5-b072-08fbe467b4ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\menu_clickable">
+      <UniqueIdentifier>{7d17e136-41dc-44d6-9a45-588e6aad3a67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\menu_clickable\menu_item">
+      <UniqueIdentifier>{c227e6aa-4f16-45f4-9dec-ff99a08975ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets\win32 widgets\system buttons">
+      <UniqueIdentifier>{c14f2ef4-ac42-4677-a874-0022abf1a618}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.hpp">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="image_drawer.hpp">
+      <Filter>gui\core\base\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="base_window.hpp">
+      <Filter>gui\core\base</Filter>
+    </ClInclude>
+    <ClInclude Include="button.hpp">
+      <Filter>gui\widgets\win32 widgets\button</Filter>
+    </ClInclude>
+    <ClInclude Include="combobox.hpp">
+      <Filter>gui\widgets\win32 widgets\combobox</Filter>
+    </ClInclude>
+    <ClInclude Include="listbox.hpp">
+      <Filter>gui\widgets\win32 widgets\listbox</Filter>
+    </ClInclude>
+    <ClInclude Include="panel.hpp">
+      <Filter>gui\widgets\win32 widgets\panel</Filter>
+    </ClInclude>
+    <ClInclude Include="textbox.hpp">
+      <Filter>gui\widgets\win32 widgets\textbox</Filter>
+    </ClInclude>
+    <ClInclude Include="trackbar.hpp">
+      <Filter>gui\widgets\win32 widgets\trackbar</Filter>
+    </ClInclude>
+    <ClInclude Include="togglebox.hpp">
+      <Filter>gui\widgets\win32 widgets\togglebox</Filter>
+    </ClInclude>
+    <ClInclude Include="widget.hpp">
+      <Filter>gui\widgets\base</Filter>
+    </ClInclude>
+    <ClInclude Include="label.hpp">
+      <Filter>gui\widgets\win32 widgets\label</Filter>
+    </ClInclude>
+    <ClInclude Include="system_button.hpp">
+      <Filter>gui\widgets\win32 widgets\system buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="window.hpp">
+      <Filter>gui\window</Filter>
+    </ClInclude>
+    <ClInclude Include="message_controller.hpp">
+      <Filter>gui\core\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="scrollbar.hpp">
+      <Filter>gui\widgets\custom widgets\scrollbar</Filter>
+    </ClInclude>
+    <ClInclude Include="tabpage.hpp">
+      <Filter>gui\widgets\custom widgets\tabpage</Filter>
+    </ClInclude>
+    <ClInclude Include="seperator.hpp">
+      <Filter>gui\widgets\win32 widgets\seperator</Filter>
+    </ClInclude>
+    <ClInclude Include="tab_base.hpp">
+      <Filter>gui\widgets\custom widgets\tabcontrols\base</Filter>
+    </ClInclude>
+    <ClInclude Include="tab_menu.hpp">
+      <Filter>gui\widgets\custom widgets\tabcontrols\tab_menu</Filter>
+    </ClInclude>
+    <ClInclude Include="tab_bar.hpp">
+      <Filter>gui\widgets\custom widgets\tabcontrols\tab_bar</Filter>
+    </ClInclude>
+    <ClInclude Include="list_view_header.hpp">
+      <Filter>gui\widgets\custom widgets\list_view\header</Filter>
+    </ClInclude>
+    <ClInclude Include="list_view_base.hpp">
+      <Filter>gui\widgets\custom widgets\list_view\base</Filter>
+    </ClInclude>
+    <ClInclude Include="list_view.hpp">
+      <Filter>gui\widgets\custom widgets\list_view\control</Filter>
+    </ClInclude>
+    <ClInclude Include="list_view_header_item.hpp">
+      <Filter>gui\widgets\custom widgets\list_view\header\item</Filter>
+    </ClInclude>
+    <ClInclude Include="list_view_base_item.hpp">
+      <Filter>gui\widgets\custom widgets\list_view\base\item</Filter>
+    </ClInclude>
+    <ClInclude Include="treeview.hpp">
+      <Filter>gui\widgets\win32 widgets\treeview</Filter>
+    </ClInclude>
+    <ClInclude Include="tooltip.hpp">
+      <Filter>gui\widgets\win32 widgets\tooltip</Filter>
+    </ClInclude>
+    <ClInclude Include="list_view_item.hpp">
+      <Filter>gui\widgets\custom widgets\list_view\control\item\list_view_item</Filter>
+    </ClInclude>
+    <ClInclude Include="menu_item.hpp">
+      <Filter>gui\widgets\win32 widgets\menu_clickable\menu_item</Filter>
+    </ClInclude>
+    <ClInclude Include="menu_clickable.hpp">
+      <Filter>gui\widgets\win32 widgets\menu_clickable</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="image_drawer.cpp">
+      <Filter>gui\core\base\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="base_window.cpp">
+      <Filter>gui\core\base</Filter>
+    </ClCompile>
+    <ClCompile Include="button.cpp">
+      <Filter>gui\widgets\win32 widgets\button</Filter>
+    </ClCompile>
+    <ClCompile Include="combobox.cpp">
+      <Filter>gui\widgets\win32 widgets\combobox</Filter>
+    </ClCompile>
+    <ClCompile Include="listbox.cpp">
+      <Filter>gui\widgets\win32 widgets\listbox</Filter>
+    </ClCompile>
+    <ClCompile Include="panel.cpp">
+      <Filter>gui\widgets\win32 widgets\panel</Filter>
+    </ClCompile>
+    <ClCompile Include="textbox.cpp">
+      <Filter>gui\widgets\win32 widgets\textbox</Filter>
+    </ClCompile>
+    <ClCompile Include="trackbar.cpp">
+      <Filter>gui\widgets\win32 widgets\trackbar</Filter>
+    </ClCompile>
+    <ClCompile Include="togglebox.cpp">
+      <Filter>gui\widgets\win32 widgets\togglebox</Filter>
+    </ClCompile>
+    <ClCompile Include="widget.cpp">
+      <Filter>gui\widgets\base</Filter>
+    </ClCompile>
+    <ClCompile Include="label.cpp">
+      <Filter>gui\widgets\win32 widgets\label</Filter>
+    </ClCompile>
+    <ClCompile Include="system_button.cpp">
+      <Filter>gui\widgets\win32 widgets\system buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="window.cpp">
+      <Filter>gui\window</Filter>
+    </ClCompile>
+    <ClCompile Include="message_controller.cpp">
+      <Filter>gui\core\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="scrollbar.cpp">
+      <Filter>gui\widgets\custom widgets\scrollbar</Filter>
+    </ClCompile>
+    <ClCompile Include="tabpage.cpp">
+      <Filter>gui\widgets\custom widgets\tabpage</Filter>
+    </ClCompile>
+    <ClCompile Include="seperator.cpp">
+      <Filter>gui\widgets\win32 widgets\seperator</Filter>
+    </ClCompile>
+    <ClCompile Include="tab_base.cpp">
+      <Filter>gui\widgets\custom widgets\tabcontrols\base</Filter>
+    </ClCompile>
+    <ClCompile Include="tab_menu.cpp">
+      <Filter>gui\widgets\custom widgets\tabcontrols\tab_menu</Filter>
+    </ClCompile>
+    <ClCompile Include="tab_bar.cpp">
+      <Filter>gui\widgets\custom widgets\tabcontrols\tab_bar</Filter>
+    </ClCompile>
+    <ClCompile Include="list_view_header.cpp">
+      <Filter>gui\widgets\custom widgets\list_view\header</Filter>
+    </ClCompile>
+    <ClCompile Include="list_view.cpp">
+      <Filter>gui\widgets\custom widgets\list_view\control</Filter>
+    </ClCompile>
+    <ClCompile Include="list_view_header_item.cpp">
+      <Filter>gui\widgets\custom widgets\list_view\header\item</Filter>
+    </ClCompile>
+    <ClCompile Include="list_view_base_item.cpp">
+      <Filter>gui\widgets\custom widgets\list_view\base\item</Filter>
+    </ClCompile>
+    <ClCompile Include="treeview.cpp">
+      <Filter>gui\widgets\win32 widgets\treeview</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltip.cpp">
+      <Filter>gui\widgets\win32 widgets\tooltip</Filter>
+    </ClCompile>
+    <ClCompile Include="list_view_item.cpp">
+      <Filter>gui\widgets\custom widgets\list_view\control\item\list_view_item</Filter>
+    </ClCompile>
+    <ClCompile Include="list_view_base.cpp">
+      <Filter>gui\widgets\custom widgets\list_view\base</Filter>
+    </ClCompile>
+    <ClCompile Include="menu_item.cpp">
+      <Filter>gui\widgets\win32 widgets\menu_clickable\menu_item</Filter>
+    </ClCompile>
+    <ClCompile Include="menu_clickable.cpp">
+      <Filter>gui\widgets\win32 widgets\menu_clickable</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

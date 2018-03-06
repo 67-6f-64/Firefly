@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Production|Win32">
+      <Configuration>Production</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{41E9416D-D270-436F-8ACD-C39F143A7363}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FireflyTrainer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Firefly Library\;..\Firefly GUI Library\;..\Firefly Network Library\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\Firefly GUI Library\Debug\resource.res;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Firefly Library\;..\Firefly GUI Library\;..\Firefly Network Library\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\Firefly GUI Library\Release\resource.res;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Firefly Library\</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_PRODUCTION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Firefly Library\;..\Firefly GUI Library\;..\Firefly Network Library\;D:\Programs\VMProtect Professional\Include\C</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\Firefly GUI Library\Release\resource.res;D:\Programs\VMProtect Professional\Lib\COFF\VMProtectSDK32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>"D:\Programs\VMProtect Professional\VMProtect_Con.exe" "$(TargetDir)$(ProjectName).exe" "$(TargetDir)final\build\$(ProjectName).exe" -pf "$(TargetDir)$(ProjectName).exe.vmp"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="autobotting_tabpage.cpp" />
+    <ClCompile Include="autologin_tabpage.cpp" />
+    <ClCompile Include="autoshop_tabpage.cpp" />
+    <ClCompile Include="exclusive_tabpage.cpp" />
+    <ClCompile Include="firefly_trainer.cpp" />
+    <ClCompile Include="game_client.cpp" />
+    <ClCompile Include="hacks_tabpage.cpp" />
+    <ClCompile Include="itemfilter_tabpage.cpp" />
+    <ClCompile Include="item_pool.cpp" />
+    <ClCompile Include="kami_tabpage.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main_window.cpp" />
+    <ClCompile Include="map_data.cpp" />
+    <ClCompile Include="map_pool.cpp" />
+    <ClCompile Include="portal_data.cpp" />
+    <ClCompile Include="custom_tabpage.cpp" />
+    <ClCompile Include="rusher_tabpage.cpp" />
+    <ClCompile Include="scripting_tabpage.cpp" />
+    <ClCompile Include="settings_tabpage.cpp" />
+    <ClCompile Include="spawncontrol_tabpage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="autobotting_tabpage.hpp" />
+    <ClInclude Include="autologin_tabpage.hpp" />
+    <ClInclude Include="autoshop_tabpage.hpp" />
+    <ClInclude Include="exclusive_tabpage.hpp" />
+    <ClInclude Include="firefly_trainer.hpp" />
+    <ClInclude Include="game_client.hpp" />
+    <ClInclude Include="hacks_tabpage.hpp" />
+    <ClInclude Include="itemfilter_tabpage.hpp" />
+    <ClInclude Include="item_pool.hpp" />
+    <ClInclude Include="kami_tabpage.hpp" />
+    <ClInclude Include="main_window.hpp" />
+    <ClInclude Include="map_data.hpp" />
+    <ClInclude Include="map_pool.hpp" />
+    <ClInclude Include="portal_data.hpp" />
+    <ClInclude Include="resource.hpp" />
+    <ClInclude Include="custom_tabpage.hpp" />
+    <ClInclude Include="rusher_tabpage.hpp" />
+    <ClInclude Include="scripting_tabpage.hpp" />
+    <ClInclude Include="settings_tabpage.hpp" />
+    <ClInclude Include="spawncontrol_tabpage.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Firefly GUI Library\Firefly GUI Library.vcxproj">
+      <Project>{15943a0a-6a1d-4e83-89e3-7808d4452dd0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly Library\Firefly Library.vcxproj">
+      <Project>{d80278eb-c9d6-46a1-b228-7b2ea6767533}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Firefly Network Library\Firefly Network Library.vcxproj">
+      <Project>{de31160f-f261-435a-829f-124d8f10915e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\firefly_trainer.ico" />
+    <Image Include="resources\settings\authenticated.png" />
+    <Image Include="resources\settings\load_profile.png" />
+    <Image Include="resources\settings\maplestory.png" />
+    <Image Include="resources\settings\quicksave_profile.png" />
+    <Image Include="resources\settings\save_profile.png" />
+    <Image Include="resources\settings\unauthenticated.png" />
+    <Image Include="resources\tabmenu\autologin.png" />
+    <Image Include="resources\tabmenu\autopot.png" />
+    <Image Include="resources\tabmenu\autoshop.png" />
+    <Image Include="resources\tabmenu\exclusive.png" />
+    <Image Include="resources\tabmenu\hacks.png" />
+    <Image Include="resources\tabmenu\itemfilter.png" />
+    <Image Include="resources\tabmenu\kami.png" />
+    <Image Include="resources\tabmenu\maprush.png" />
+    <Image Include="resources\tabmenu\scripting.png" />
+    <Image Include="resources\tabmenu\settings.png" />
+    <Image Include="resources\tabmenu\spawncontrol.png" />
+    <Image Include="resources\widget\checkbox_check.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Changelog.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resource">
+      <UniqueIdentifier>{40eb3704-a9ca-4bc2-8845-c3b777b82f02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{6d1428bf-1f45-4ff5-9a1a-2f7d3c3fa655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{8bd8d89e-5894-4a27-9e1e-17e64a32ad21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly">
+      <UniqueIdentifier>{a04e98a8-a0cf-410c-b4f6-834e79e5852e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\launcher">
+      <UniqueIdentifier>{14ef6c94-52da-444a-8b67-875bfb818426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages">
+      <UniqueIdentifier>{d26a92d8-ff9e-4a0d-a376-14a00e73ebac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\autologin">
+      <UniqueIdentifier>{65121935-d10b-4dd6-9818-6f8348f08320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\[pending] scripting">
+      <UniqueIdentifier>{453a3c68-1ed2-42bf-98f6-855c727541e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\settings">
+      <UniqueIdentifier>{83272870-6bf0-4c68-8884-d95ccf71a53b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\autobotting">
+      <UniqueIdentifier>{b4061d14-dc7a-4125-a005-3a1559713fd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\kami">
+      <UniqueIdentifier>{d4146b09-d70f-4c68-9d96-ab08813392e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\autoshop">
+      <UniqueIdentifier>{8ce87e6d-1df3-4d18-bff6-f751526e9628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\itemfilter">
+      <UniqueIdentifier>{8a18a2a5-c8eb-4c7a-b188-f93db8dbabfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\rusher">
+      <UniqueIdentifier>{10e94e7e-dfa8-4122-a472-952ca124bbdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\spawncontrol">
+      <UniqueIdentifier>{a5e46a8e-5ef1-4ab0-b591-f4af430f2d0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\hacks">
+      <UniqueIdentifier>{8e433c57-7be0-4c54-8260-0ca60b136cd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\tabpages\exclusive">
+      <UniqueIdentifier>{7f80df09-f65b-42b2-b687-97a2c5c46ec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\launcher\data">
+      <UniqueIdentifier>{6fe3321b-6c0e-47e0-865a-fdfd8630011a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\launcher\data\item pool">
+      <UniqueIdentifier>{b7f5a8e7-4e06-4860-9f53-588d0670376b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\launcher\data\map pool">
+      <UniqueIdentifier>{3af9d91f-7974-4c21-a269-83c769c40b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\launcher\data\map pool\portals">
+      <UniqueIdentifier>{1649e3da-ec59-43bc-a35c-b0885f2b821e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firefly\launcher\data\map pool\maps">
+      <UniqueIdentifier>{59accc2b-4e98-4ae7-9f99-7488e1246e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\images">
+      <UniqueIdentifier>{7404acae-568e-41c9-a0de-c98046936af9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\images\tab-icons">
+      <UniqueIdentifier>{0cffe5f9-00e8-49d1-aa58-6813877c2a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\images\settings-icons">
+      <UniqueIdentifier>{162f00ed-ec32-49db-a176-1ab9e1a610f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.hpp">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="main_window.hpp">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="item_pool.hpp">
+      <Filter>firefly\launcher\data\item pool</Filter>
+    </ClInclude>
+    <ClInclude Include="map_pool.hpp">
+      <Filter>firefly\launcher\data\map pool</Filter>
+    </ClInclude>
+    <ClInclude Include="portal_data.hpp">
+      <Filter>firefly\launcher\data\map pool\portals</Filter>
+    </ClInclude>
+    <ClInclude Include="map_data.hpp">
+      <Filter>firefly\launcher\data\map pool\maps</Filter>
+    </ClInclude>
+    <ClInclude Include="firefly_trainer.hpp">
+      <Filter>firefly</Filter>
+    </ClInclude>
+    <ClInclude Include="game_client.hpp">
+      <Filter>firefly\launcher</Filter>
+    </ClInclude>
+    <ClInclude Include="autologin_tabpage.hpp">
+      <Filter>gui\tabpages\autologin</Filter>
+    </ClInclude>
+    <ClInclude Include="custom_tabpage.hpp">
+      <Filter>gui\tabpages</Filter>
+    </ClInclude>
+    <ClInclude Include="hacks_tabpage.hpp">
+      <Filter>gui\tabpages\hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="autobotting_tabpage.hpp">
+      <Filter>gui\tabpages\autobotting</Filter>
+    </ClInclude>
+    <ClInclude Include="itemfilter_tabpage.hpp">
+      <Filter>gui\tabpages\itemfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="kami_tabpage.hpp">
+      <Filter>gui\tabpages\kami</Filter>
+    </ClInclude>
+    <ClInclude Include="rusher_tabpage.hpp">
+      <Filter>gui\tabpages\rusher</Filter>
+    </ClInclude>
+    <ClInclude Include="scripting_tabpage.hpp">
+      <Filter>gui\tabpages\[pending] scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="settings_tabpage.hpp">
+      <Filter>gui\tabpages\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="spawncontrol_tabpage.hpp">
+      <Filter>gui\tabpages\spawncontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="exclusive_tabpage.hpp">
+      <Filter>gui\tabpages\exclusive</Filter>
+    </ClInclude>
+    <ClInclude Include="autoshop_tabpage.hpp">
+      <Filter>gui\tabpages\autoshop</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="main_window.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="item_pool.cpp">
+      <Filter>firefly\launcher\data\item pool</Filter>
+    </ClCompile>
+    <ClCompile Include="map_pool.cpp">
+      <Filter>firefly\launcher\data\map pool</Filter>
+    </ClCompile>
+    <ClCompile Include="portal_data.cpp">
+      <Filter>firefly\launcher\data\map pool\portals</Filter>
+    </ClCompile>
+    <ClCompile Include="map_data.cpp">
+      <Filter>firefly\launcher\data\map pool\maps</Filter>
+    </ClCompile>
+    <ClCompile Include="firefly_trainer.cpp">
+      <Filter>firefly</Filter>
+    </ClCompile>
+    <ClCompile Include="game_client.cpp">
+      <Filter>firefly\launcher</Filter>
+    </ClCompile>
+    <ClCompile Include="autologin_tabpage.cpp">
+      <Filter>gui\tabpages\autologin</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_tabpage.cpp">
+      <Filter>gui\tabpages</Filter>
+    </ClCompile>
+    <ClCompile Include="hacks_tabpage.cpp">
+      <Filter>gui\tabpages\hacks</Filter>
+    </ClCompile>
+    <ClCompile Include="autobotting_tabpage.cpp">
+      <Filter>gui\tabpages\autobotting</Filter>
+    </ClCompile>
+    <ClCompile Include="itemfilter_tabpage.cpp">
+      <Filter>gui\tabpages\itemfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="kami_tabpage.cpp">
+      <Filter>gui\tabpages\kami</Filter>
+    </ClCompile>
+    <ClCompile Include="rusher_tabpage.cpp">
+      <Filter>gui\tabpages\rusher</Filter>
+    </ClCompile>
+    <ClCompile Include="scripting_tabpage.cpp">
+      <Filter>gui\tabpages\[pending] scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="settings_tabpage.cpp">
+      <Filter>gui\tabpages\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="spawncontrol_tabpage.cpp">
+      <Filter>gui\tabpages\spawncontrol</Filter>
+    </ClCompile>
+    <ClCompile Include="exclusive_tabpage.cpp">
+      <Filter>gui\tabpages\exclusive</Filter>
+    </ClCompile>
+    <ClCompile Include="autoshop_tabpage.cpp">
+      <Filter>gui\tabpages\autoshop</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\widget\checkbox_check.bmp">
+      <Filter>resource\images</Filter>
+    </Image>
+    <Image Include="resources\tabmenu\autologin.png">
+      <Filter>resource\images\tab-icons</Filter>
+    </Image>
+    <Image Include="resources\tabmenu\autopot.png">
+      <Filter>resource\images\tab-icons</Filter>
+    </Image>
+    <Image Include="resources\tabmenu\autoshop.png">
+      <Filter>resource\images\tab-icons</Filter>
+    </Image>
+    <Image Include="resources\settings\authenticated.png">
+      <Filter>resource\images\settings-icons</Filter>
+    </Image>
+    <Image Include="resources\tabmenu\exclusive.png">
+      <Filter>resource\images\tab-icons</Filter>
+    </Image>
+    <Image Include="resources\tabmenu\hacks.png">
+      <Filter>resource\images\tab-icons</Filter>
+    </Image>
+    <Image Include="resources\tabmenu\kami.png">
+      <Filter>resource\images\tab-icons</Filter>
+    </Image>
+    <Image Include="resources\tabmenu\itemfilter.png">
+      <Filter>resource\images\tab-icons</Filter>
+    </Image>
+    <Image Include="resources\settings\maplestory.png">
+      <Filter>resource\images\settings-icons</Filter>
+    </Image>
+    <Image Include="resources\settings\load_profile.png">
+      <Filter>resource\images\settings-icons</Filter>
+    </Image>
+    <Image Include="resources\settings\quicksave_profile.png">
+      <Filter>resource\images\settings-icons</Filter>
+    </Image>
+    <Image Include="resources\settings\save_profile.png">
+      <Filter>resource\images\settings-icons</Filter>
+    </Image>
+    <Image Include="resources\tabmenu\maprush.png">
+      <Filter>resource\images\tab-icons</Filter>
+    </Image>
+    <Image Include="resources\tabmenu\scripting.png">
+      <Filter>resource\images\tab-icons</Filter>
+    </Image>
+    <Image Include="resources\tabmenu\settings.png">
+      <Filter>resource\images\tab-icons</Filter>
+    </Image>
+    <Image Include="resources\tabmenu\spawncontrol.png">
+      <Filter>resource\images\tab-icons</Filter>
+    </Image>
+    <Image Include="resources\settings\unauthenticated.png">
+      <Filter>resource\images\settings-icons</Filter>
+    </Image>
+    <Image Include="resources\firefly_trainer.ico">
+      <Filter>resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Changelog.txt" />
+  </ItemGroup>
+</Project>
